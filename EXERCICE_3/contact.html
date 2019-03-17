@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>formulaire_contact</title>
+    <style>
+    
+        table{
+            border: 1px solid black;
+            position: relative;
+            width: 70%;
+            height:69% ;
+            background-color: lightgrey;
+            margin-top: 100px;
+            margin-left: 200px;
+            
+        }
+        td
+        {
+            border: 1px solid black;
+            width: 100px;
+        }
+        button
+        {
+            background-color: white;
+        }
+        input[type="checkbox"]
+        {
+                color: white;
+        }
+    </style>
+    <script src="script.js"></script>
+</head>
+<body>
+    
+       
+        <table >
+                <tr>
+                    <td>Civilité</td>
+                    <td>
+                        <select>
+                            <option selected>Monsieur</option>
+                            <option>Madame</option>
+                            <option>Mademoiselle</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Nom</td>
+                    <td><input type="text" id="nom"  required></td><span id="errorName"></span>
+                </tr>
+                <tr>
+                    <td>Prenom</td>
+                    <td><input type="text" id="prenom" required></td><span id="errorpName"></span>
+                </tr>
+                <tr>
+                    <td style="height:100px;">Adresse</td>
+                    <td><textarea style="height:90%; width:60%;" id="adresse" required></textarea></td><span id="erroradresse"></span>
+                </tr>
+                <tr>
+                    <td>Ville</td>
+                    <td><input type="text" id="ville" required> Code Postal : <input type="email"></td><span id="errorville"></span>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="checkbox">je souhaite recevoir la newlettre -couriel : <input type="text" ></td>
+                </tr>
+                <tr>
+                   <td> <button id="demande" type="button" onclick="verifierFormulaire();" >Envoye</button></td>
+                   
+                </tr>
+            </table>
+
+</body>
+</html>
